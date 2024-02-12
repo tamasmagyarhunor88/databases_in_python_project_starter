@@ -19,3 +19,12 @@ def test_two_identical_properties_items_are_equal():
     item2 = Item(1, "Tennis shorts", "sportswear")
 
     assert item1 == item2
+
+def test_printing_out_item_prints_in_nice_format():
+    """
+Given I print out an Item
+It prints in a nice format
+
+"""
+item = Item(1, "Bike", "sports equipment")
+assert str(item) == "Item(1, Bike, sports equipment)"
